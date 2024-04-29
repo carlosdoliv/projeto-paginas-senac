@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: content-box;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+
+.about {
+  display: flex;
+  
+}
