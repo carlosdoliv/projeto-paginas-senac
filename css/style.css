@@ -189,7 +189,7 @@ main {
 .exercicios ul{
   margin: 0 20px;
   columns: 2;
-  list-style-image: url("/Imagens/link.png");
+  list-style-image: url("Imagens/link.png");
 }
 .exercicios > .card {
   justify-content: space-between;
