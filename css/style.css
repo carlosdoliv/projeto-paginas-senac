@@ -11,12 +11,17 @@ body {
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #263238;
 }
 
 p {
-  color: #3C474C;
+  color: #3c474c;
 }
 header {
   display: flex;
@@ -24,17 +29,15 @@ header {
   box-shadow: 1px 1px 4px gray;
 }
 
-header input{
+header input {
   display: none;
 }
 
-
-header input[type=checkbox]:checked ~ .back-menu{
+header input[type="checkbox"]:checked ~ .back-menu {
   display: block;
-  
 }
 
-#drop-menu{
+#drop-menu {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,18 +47,17 @@ header input[type=checkbox]:checked ~ .back-menu{
   padding: 30px;
   border-radius: 5px;
   z-index: 1;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.drop-menu h2{
+.drop-menu h2 {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-.drop-menu h6{
+.drop-menu h6 {
   font-size: 1.5em;
   margin: 10px 0;
-
 }
 
 .back-menu > label.close {
@@ -65,11 +67,11 @@ header input[type=checkbox]:checked ~ .back-menu{
   border: none;
 }
 
-.back-menu label.close > img{
+.back-menu label.close > img {
   width: 40px;
 }
 
-div.back-menu{
+div.back-menu {
   display: none;
   box-sizing: content-box;
   position: fixed;
@@ -80,26 +82,25 @@ div.back-menu{
   width: 100vw;
   height: 100vh;
 }
-.social img{
-  transition: all .5s ease-in-out;
-
+.social img {
+  transition: all 0.5s ease-in-out;
 }
-.social img:hover{
+.social img:hover {
   transform: scale(1.2);
 }
 
-header div.cont-head{
+header div.cont-head {
   max-width: 70%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: .9em;
+  font-size: 0.9em;
   padding: 15px 0px;
   color: #35474c;
 }
 
-header > div img{
+header > div img {
   width: 50px;
 }
 
@@ -112,8 +113,8 @@ header label.btn {
   transition: background 1s ease-in-out;
 }
 
-body > header > div:nth-child(2) > label:hover{
-  background:gray;
+body > header > div:nth-child(2) > label:hover {
+  background: gray;
 }
 
 .social {
@@ -122,7 +123,7 @@ body > header > div:nth-child(2) > label:hover{
   margin-bottom: 5px;
 }
 
-.social img{
+.social img {
   width: 40px;
 }
 
@@ -157,67 +158,66 @@ main {
   flex-wrap: wrap;
 }
 
-.card > article p{
+.card > article p {
   margin: 10px 0;
 }
 
-.card article{
+.card article {
   flex-basis: 40%;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 1px 1px 3px gray;
   font-size: 1em;
 }
-.card article div{
+.card article div {
   display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
 }
 
-.card > article > div > a img{
+.card > article > div > a img {
   width: 40px;
   margin-top: 10px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.card > article > div > a img:hover{
+.card > article > div > a img:hover {
   transform: scale(1.2);
 }
 
-
-.exercicios ul{
+.exercicios ul {
   margin: 0 20px;
   columns: 2;
-  list-style-image: url("Imagens/link.png");
+  list-style-image: url("../Imagens/link.png");
 }
 .exercicios > .card {
   justify-content: space-between;
   gap: 20px;
 }
 
-.exercicios > .card a{
+.exercicios > .card a {
   text-decoration: none;
-  color: #33496D;
+  color: #33496d;
 }
 
-.exercicios h1{
+.exercicios h1 {
   margin: 20px 0;
 }
 
-@media(max-width:600px) {
-  .card article{
+@media (max-width: 600px) {
+  .card article {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
 
-  .about img{
+  .about img {
     display: none;
   }
   .about h1 {
     font-size: 2.5em;
   }
-  
+
   .about p {
     font-size: 1em;
     text-align: justify;
@@ -227,28 +227,26 @@ main {
     max-width: 100%;
     padding: 20px;
   }
-  
-  header div{
+
+  header div {
     max-width: 100%;
   }
   header {
-    
-    font-size: .6em;
+    font-size: 0.6em;
   }
 
-  #drop-menu{
+  #drop-menu {
     width: 50%;
   }
 }
 
-
-@media(max-width:800px) {
-  .about img{
+@media (max-width: 800px) {
+  .about img {
     display: none;
   }
 }
-@media(max-width:850px) {
-  .exercicios .card article{
+@media (max-width: 850px) {
+  .exercicios .card article {
     flex-basis: 100%;
   }
 }
@@ -258,6 +256,6 @@ footer {
   padding: 20px;
   text-align: center;
 }
-footer p{
+footer p {
   color: white;
 }
