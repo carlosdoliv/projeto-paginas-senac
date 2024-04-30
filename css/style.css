@@ -9,6 +9,7 @@
 body {
   font-family: Poppins;
   font-size: 16px;
+  position: relative;
 }
 
 h1,
@@ -119,6 +120,8 @@ body > header > div:nth-child(2) > label:hover {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   margin-bottom: 5px;
 }
@@ -130,6 +133,7 @@ body > header > div:nth-child(2) > label:hover {
 main {
   margin: 0 auto;
   max-width: 70%;
+  min-height: 100vh;
   padding: 0 0 40px 0;
 }
 
@@ -223,11 +227,6 @@ main {
     text-align: justify;
   }
 
-  main {
-    max-width: 100%;
-    padding: 20px;
-  }
-
   header div {
     max-width: 100%;
   }
@@ -256,6 +255,7 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
 footer p {
   color: white;
 }

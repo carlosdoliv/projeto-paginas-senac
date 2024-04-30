@@ -5,8 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafios</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<link rel="stylesheet" href="../css/style.css">
+<style>
+  .desafios {
+    justify-content: center !important;
+  }
+
+  .desafios article {
+    flex-basis: 90% !important;
+  }
+
+  .desafios ul {
+    columns: 3;
+  }
+
+  .desafios>article p {
+    margin: 40px 0px;
+  }
+
+  @media (max-width:510px){
+    .desafios ul{
+      columns: 2;
+    }
+  }
+  @media (max-width:400px){
+    .desafios ul{
+      columns: 1;
+      text-align: center;
+    }
+  }
+</style>
 
 <body>
   <header>
@@ -62,7 +91,6 @@
         </article>
       </article>
     </section>
-
   </main>
   <footer>
     <p>Projeto Páginas</p>
