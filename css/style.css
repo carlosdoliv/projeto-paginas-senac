@@ -9,10 +9,19 @@
 body {
   font-family: Poppins;
   font-size: 16px;
-  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #263238;
+}
+
+p {
+  color: #3C474C;
 }
 header {
   display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 4px gray;
 }
 
 header input{
@@ -22,7 +31,7 @@ header input{
 
 header input[type=checkbox]:checked ~ .back-menu{
   display: block;
-  transition: all .5s ease-in-out;
+  
 }
 
 #drop-menu{
@@ -35,6 +44,7 @@ header input[type=checkbox]:checked ~ .back-menu{
   padding: 30px;
   border-radius: 5px;
   z-index: 1;
+  transition: all .5s ease-in-out;
 }
 
 .drop-menu h2{
@@ -48,21 +58,21 @@ header input[type=checkbox]:checked ~ .back-menu{
 
 }
 
-.back-menu label {
+.back-menu > label.close {
   float: right;
-  background-color: transparent;
-  padding: 20px;
+  margin: 20px 35px;
+  /* background-color: transparent; */
   border: none;
 }
 
-.back-menu label > img{
+.back-menu label.close > img{
   width: 40px;
 }
 
 div.back-menu{
   display: none;
   box-sizing: content-box;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   margin: 0 auto;
@@ -93,12 +103,17 @@ header > div img{
   width: 50px;
 }
 
-header label {
+header label.btn {
   padding: 10px;
   background-color: white;
   border-radius: 5px;
   border: 2px solid gray;
   cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+body > header > div:nth-child(2) > label:hover{
+  background:gray;
 }
 
 .social {
@@ -142,6 +157,10 @@ main {
   flex-wrap: wrap;
 }
 
+.card > article p{
+  margin: 10px 0;
+}
+
 .card article{
   flex-basis: 40%;
   border-radius: 10px;
@@ -164,6 +183,26 @@ main {
 
 .card > article > div > a img:hover{
   transform: scale(1.2);
+}
+
+
+.exercicios ul{
+  margin: 0 20px;
+  columns: 2;
+  list-style-image: url("/Imagens/link.png");
+}
+.exercicios > .card {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.exercicios > .card a{
+  text-decoration: none;
+  color: #33496D;
+}
+
+.exercicios h1{
+  margin: 20px 0;
 }
 
 @media(max-width:600px) {
@@ -193,7 +232,7 @@ main {
     max-width: 100%;
   }
   header {
-    box-shadow: 1px 1px 4px gray;
+    
     font-size: .6em;
   }
 
@@ -208,11 +247,17 @@ main {
     display: none;
   }
 }
-
+@media(max-width:850px) {
+  .exercicios .card article{
+    flex-basis: 100%;
+  }
+}
 
 footer {
   background-color: rgb(41, 41, 41);
-  color: white;
   padding: 20px;
   text-align: center;
+}
+footer p{
+  color: white;
 }
