@@ -38,6 +38,7 @@ header input[type="checkbox"]:checked ~ .back-menu {
   display: block;
 }
 
+
 #drop-menu {
   position: absolute;
   top: 50%;
@@ -165,7 +166,10 @@ main {
 .card > article p {
   margin: 10px 0;
 }
-
+.card a{
+  text-decoration: none;
+  color: #263238;
+}
 .card article {
   flex-basis: 40%;
   border-radius: 10px;
@@ -183,6 +187,8 @@ main {
 .card > article > div > a img {
   width: 40px;
   margin-top: 10px;
+  display: block;
+  margin: 0 auto;
   transition: all 0.5s ease-in-out;
 }
 
