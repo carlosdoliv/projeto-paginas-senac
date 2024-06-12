@@ -1,2 +1,3 @@
 # projeto-paginas
-[Acesse aqui](https://jcarlosolv.github.io/projeto-paginas-senac/)
+[Acesse aqui](https://carlosdoliv.github.io/projeto-paginas-senac/)
+https://carlosdoliv.github.io/projeto-paginas-senac/
